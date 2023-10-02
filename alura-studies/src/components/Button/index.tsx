@@ -1,15 +1,22 @@
-import React from "react";
+import React, { PropsWithChildren } from "react";
+
 import style from './Button.module.scss';
 
-interface MyProps { }
+// interface MyProps { }
+type Props = PropsWithChildren<{
+  tipo?: "button" | "submit" | "reset" | undefined
+}>
 
-function Button (props: React.PropsWithChildren<MyProps>) {
+export const Button = ({ tipo, children }: Props) => {
 
-  return (
-    <button className={style.botao}>
-      {props.children}
-    </button>
-  )
+  tipo = (tipo === undefined) ? "button": tipo;
+
+    return (
+      <button type={tipo} className={style.botao}>
+        {children}
+      </button>
+    )
+
 }
 
 export default Button;
