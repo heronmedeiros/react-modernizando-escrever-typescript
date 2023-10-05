@@ -1,4 +1,6 @@
 import React from "react";
+import { v4 as uuidv4 } from "uuid";
+
 import Botao from "../Button";
 import style from './Form.module.scss';
 import ITfarefa from "../../types/ITarefa";
@@ -14,8 +16,14 @@ class Form extends React.Component<{
     event.preventDefault();
     this.props.setTarefas( tarefasAntigas => [
       ...tarefasAntigas,
-      { ...this.state }
-    ] )
+        {
+          ...this.state,
+          selecionado: false,
+          completado: false,
+          id: uuidv4(),
+        }
+      ]
+    )
     this.setState({
       tarefa: "",
       tempo: "00:00:00"
