@@ -16,7 +16,8 @@ export const formataMinutosESegundos = (tempo: number) => {
   const [minDezena, minUnidade] = String(minutos).padStart(2, '0');
   const [segDezena, segUnidade] = String(segundos).padStart(2, '0');
 
-  return {minDezena,
+  return {
+    minDezena,
     minUnidade,
     segDezena,
     segUnidade

@@ -8,7 +8,7 @@ import { tempoParaSegundos } from "../../common/utils/time";
 
 import style from './Stopwatch.module.scss'
 
-const Stopwatch = ({ selecionado }: IStopwatch) => {
+const Stopwatch = ({ selecionado, finalizarTarefa }: IStopwatch) => {
   const [tempo, setTempo] = useState<number>();
 
   useEffect( () => {
@@ -23,6 +23,7 @@ const Stopwatch = ({ selecionado }: IStopwatch) => {
         setTempo(contador - 1);
         return contagemRegressiva(contador - 1);
       }
+      finalizarTarefa();
     }, 1000);
   };
 
