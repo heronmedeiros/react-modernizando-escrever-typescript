@@ -9,7 +9,7 @@ import { tempoParaSegundos } from "../../common/utils/time";
 import style from './Stopwatch.module.scss'
 
 const Stopwatch = ({ selecionado }: IStopwatch) => {
-  const [tempo, setTempo] = useState<number>();//
+  const [tempo, setTempo] = useState<number>();
 
   useEffect( () => {
     if (selecionado?.tempo) {
@@ -17,7 +17,14 @@ const Stopwatch = ({ selecionado }: IStopwatch) => {
     }
   }, [selecionado]);
 
-
+  const contagemRegressiva = (contador: number = 0) => {
+    setTimeout(() => {
+      if (contador > 0) {
+        setTempo(contador - 1);
+        return contagemRegressiva(contador - 1);
+      }
+    }, 1000);
+  };
 
   return (
     <div className={style.cronometro}>
@@ -25,7 +32,7 @@ const Stopwatch = ({ selecionado }: IStopwatch) => {
       <div className={style.relogioWrapper}>
         <Clock tempo={tempo}/>
       </div>
-      <Button>
+      <Button onClick={ () => contagemRegressiva(tempo) }>
         Começar!
       </Button>
     </div>

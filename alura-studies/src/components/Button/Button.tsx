@@ -1,17 +1,12 @@
-import React, { PropsWithChildren } from "react";
-
+import PropsButton from '../types/PropsButton';
 import style from './Button.module.scss';
 
-type Props = PropsWithChildren<{
-  tipo?: "button" | "submit" | "reset" | undefined
-}>
-
-const Button = ({ tipo, children }: Props) => {
+const Button = ({ tipo, onClick, children }: PropsButton) => {
 
   tipo = (tipo === undefined) ? "button": tipo;
 
     return (
-      <button type={tipo} className={style.botao}>
+      <button onClick={onClick} type={tipo} className={style.botao}>
         {children}
       </button>
     )
