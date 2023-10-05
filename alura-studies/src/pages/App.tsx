@@ -8,11 +8,23 @@ import { Stopwatch } from '../components/Stopwatch';
 
 function App() {
   const [tarefas, setTarefas] = useState<ITarefa[]>([]);
+  const [selecionado, setSelecionado] = useState<ITarefa>();
+
+  const selectionaTarefa = (tarefaSelecionada: ITarefa) => {
+    setSelecionado(tarefaSelecionada);
+    setTarefas( tarefasAnteriores => tarefasAnteriores.map( tarefa => ({
+      ...tarefa,
+      selecionado: (tarefa.id === tarefaSelecionada.id ? true : false)
+    })))
+  }
 
   return (
     <div className={style.AppStyle}>
       <Form setTarefas={setTarefas}/>
-      <List tarefas={tarefas}/>
+      <List
+        tarefas={tarefas}
+        selecionaTarefa={selectionaTarefa}
+      />
       <Stopwatch />
     </div>
   );

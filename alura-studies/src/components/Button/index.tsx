@@ -2,7 +2,6 @@ import React, { PropsWithChildren } from "react";
 
 import style from './Button.module.scss';
 
-// interface MyProps { }
 type Props = PropsWithChildren<{
   tipo?: "button" | "submit" | "reset" | undefined
 }>
