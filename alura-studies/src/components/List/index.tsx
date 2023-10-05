@@ -1,4 +1,4 @@
-import IIListProps from '../../types/IListProps';
+import IIListProps from '../types/IListProps';
 
 import Item from './Item';
 import style from './List.module.scss';

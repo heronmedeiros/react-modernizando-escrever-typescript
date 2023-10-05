@@ -3,7 +3,7 @@ import { v4 as uuidv4 } from "uuid";
 
 import Botao from "../Button";
 import style from './Form.module.scss';
-import ITfarefa from "../../types/ITarefa";
+import ITfarefa from "../types/ITarefa";
 
 class Form extends React.Component<{
   setTarefas: React.Dispatch<React.SetStateAction<ITfarefa[]>>

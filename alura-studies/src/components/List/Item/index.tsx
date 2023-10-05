@@ -1,6 +1,6 @@
-import IItemProps from '../../../types/IItemProps';
+import IItemProps from '../../types/IItemProps';
 
-import style from '../List.module.scss';
+import style from './Item.module.scss';
 
 
 export default function Item (

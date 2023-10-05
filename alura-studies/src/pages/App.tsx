@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Form from '../components/Form';
 import List from '../components/List';
-import ITarefa from '../types/ITarefa';
+import ITarefa from '../components/types/ITarefa';
 
 import style from './App.module.scss';
 import { Stopwatch } from '../components/Stopwatch';
