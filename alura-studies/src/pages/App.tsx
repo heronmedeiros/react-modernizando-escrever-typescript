@@ -4,7 +4,7 @@ import List from '../components/List';
 import ITarefa from '../components/types/ITarefa';
 
 import style from './App.module.scss';
-import { Stopwatch } from '../components/Stopwatch';
+import Stopwatch from '../components/Stopwatch';
 
 function App() {
   const [tarefas, setTarefas] = useState<ITarefa[]>([]);
@@ -25,7 +25,7 @@ function App() {
         tarefas={tarefas}
         selecionaTarefa={selectionaTarefa}
       />
-      <Stopwatch />
+      <Stopwatch selecionado={selecionado}/>
     </div>
   );
 }
