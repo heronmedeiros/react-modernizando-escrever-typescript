@@ -6,11 +6,10 @@ Rápida descrição do objetivo de fazer esse projeto
 | -------------  | --- |
 | :sparkles: Nome        | **Alura Studies**
 | :label: Tecnologias | React, TypeScript Javascript, html, CSS (tecnologias utilizadas)
-| :rocket: URL         | https://url-deploy.com.br
-| :fire: Desafio     | https://url-do-desafio.com.br
+| :rocket: URL         | [https://react-modernizando-escrever-typescript-heronmedeiros.vercel.app/](https://react-modernizando-escrever-typescript-heronmedeiros.vercel.app/)
 
 <!-- Inserir imagem com a #vitrinedev ao final do link -->
-![](https://via.placeholder.com/1200x500.png?text=imagem+lindona+do+meu+projeto#vitrinedev)
+![]([https://via.placeholder.com/1200x500.png?text=imagem+lindona+do+meu+projeto](https://raw.githubusercontent.com/heronmedeiros/react-modernizando-escrever-typescript/main/screenshot.png)#vitrinedev)
 
 ## Detalhes do projeto
 
