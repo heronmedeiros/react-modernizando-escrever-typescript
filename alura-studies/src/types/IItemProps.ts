@@ -1,7 +1,7 @@
-import ITfarefa from "./ITarefa";
+import ITarefa from "./ITarefa";
 
-interface IItemProps extends ITfarefa {
-  selecionaTarefa: (tarefaSelectionada: ITfarefa) => void,
+interface IItemProps extends ITarefa {
+  selecionaTarefa: (tarefaSelectionada: ITarefa) => void,
 }
 
 export default IItemProps;

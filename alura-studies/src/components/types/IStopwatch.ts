@@ -1,6 +1,6 @@
-import ITfarefa from "./ITarefa";
+import ITarefa from "./ITarefa";
 
 export interface IStopwatch {
-  selecionado: ITfarefa | undefined,
+  selecionado: ITarefa | undefined,
   finalizarTarefa: () => void
 }

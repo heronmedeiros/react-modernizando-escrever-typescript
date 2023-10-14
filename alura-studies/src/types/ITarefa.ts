@@ -1,4 +1,4 @@
-export default interface ITfarefa {
+export default interface ITarefa {
   tarefa: string,
   tempo: string,
   selecionado: boolean,

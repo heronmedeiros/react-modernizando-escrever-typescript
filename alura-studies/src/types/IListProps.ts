@@ -1,8 +1,8 @@
-import ITfarefa from "./ITarefa"
+import ITarefa from "./ITarefa"
 
 interface IIListProps {
-  tarefas: Array<ITfarefa>,
-  selecionaTarefa: (tarefaSelectionada: ITfarefa) => void,
+  tarefas: Array<ITarefa>,
+  selecionaTarefa: (tarefaSelectionada: ITarefa) => void,
 }
 
 export default IIListProps;

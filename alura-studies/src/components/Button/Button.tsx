@@ -1,7 +1,7 @@
-import PropsButton from '../types/PropsButton';
+import IPropsButton from '../types/IPropsButton';
 import style from './Button.module.scss';
 
-const Button = ({ tipo, onClick, children }: PropsButton) => {
+const Button = ({ tipo, onClick, children }: IPropsButton) => {
 
   tipo = (tipo === undefined) ? "button": tipo;
 
